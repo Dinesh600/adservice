@@ -63,7 +63,7 @@ spec:
       steps {
         container('kubectl') {
           sh "gcloud container clusters get-credentials deployjenkins --zone us-central1-c --project my-project-600-339318"
-          
+          sh "kubectl apply -f adservice.yaml"
                 
         }
       }
